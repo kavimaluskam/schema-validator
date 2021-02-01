@@ -67,7 +67,8 @@ def generate_summary_report(input_path: str):
             record = json.loads(line)
 
             timestamp, name = record.get('timestamp'), record.get('event')
-            date = datetime.datetime.strptime(timestamp, '%Y-%m-%d %H:%M:%S.%f').date().strftime('%Y-%m-%d')
+            date = datetime.datetime.strptime(
+                timestamp, '%Y-%m-%d %H:%M:%S.%f').date().strftime('%Y-%m-%d')
             key = f"{date}{name}"
 
             if key in data:

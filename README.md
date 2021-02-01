@@ -6,9 +6,9 @@ A simple python cli tool on schema validation.
 
 - generate-schema: Generate schema based of list of json records
 
-- validate: Validate list of json records with provided schema
+- validate: Validate list of json records with provided schema (Objective 1)
 
-- summary: Generate summary report on list of json records
+- summary: Generate summary report on list of json records (Objective 2)
 
 ## Usage
 

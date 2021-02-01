@@ -15,14 +15,14 @@ help:
 
 generate-schema:
 	docker run --rm \
-		-v data:/app/data \
+		-v `pwd`/data:/app/data \
 		$(TAG) \
 		python cli.py generate-schema \
 		--input_path $(INPUT_PATH)
 
 validate:
 	docker run --rm \
-		-v data:/app/data \
+		-v `pwd`/data:/app/data \
 		$(TAG) \
 		python cli.py validate \
 		--input_path $(INPUT_PATH) \
@@ -30,7 +30,7 @@ validate:
 
 summary:
 	docker run --rm \
-		-v data:/app/data \
+		-v `pwd`/data:/app/data \
 		$(TAG) \
 		python cli.py summary \
 		--input_path $(INPUT_PATH)
