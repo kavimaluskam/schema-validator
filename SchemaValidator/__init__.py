@@ -1,3 +1,4 @@
+import datetime
 import json
 import os
 
@@ -62,10 +63,11 @@ def generate_summary_report(input_path: str):
 
     data = {}
     with open(input_path, 'r') as r:
-        for line_number, line in enumerate(r):
+        for line in r:
             record = json.loads(line)
 
-            date, name = record.get('date'), record.get('name')
+            timestamp, name = record.get('timestamp'), record.get('event')
+            date = datetime.datetime.strptime(timestamp, '%Y-%m-%d %H:%M:%S.%f').date().strftime('%Y-%m-%d')
             key = f"{date}{name}"
 
             if key in data:
