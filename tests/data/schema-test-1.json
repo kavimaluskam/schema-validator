@@ -1,0 +1,80 @@
+{
+  "random":{
+     "type":"number",
+     "required":true
+  },
+  "random float":{
+     "type":"number",
+     "required":true
+  },
+  "bool":{
+     "type":"boolean",
+     "required":false
+  },
+  "date":{
+     "type":"string",
+     "required":false
+  },
+  "regEx":{
+     "type":"string",
+     "required":true
+  },
+  "enum":{
+     "type":"string",
+     "required":true
+  },
+  "firstname":{
+     "type":"string",
+     "required":true
+  },
+  "lastname":{
+     "type":"string",
+     "required":true
+  },
+  "city":{
+     "type":"string",
+     "required":true
+  },
+  "country":{
+     "type":"string",
+     "required":true
+  },
+  "countryCode":{
+     "type":"string",
+     "required":true
+  },
+  "email uses current data":{
+     "type":"string",
+     "required":true
+  },
+  "email from expression":{
+     "type":"string",
+     "required":true
+  },
+  "array":{
+     "type":"array",
+     "required":true,
+     "element_type":{
+        "type":"string",
+        "required":true
+     }
+  },
+  "array of objects":{
+     "type":"array",
+     "required":true,
+     "element_type":{
+        "type":"object",
+        "required":true,
+        "fields":{
+           "index":{
+              "type":"number",
+              "required":true
+           },
+           "index start at 5":{
+              "type":"number",
+              "required":true
+           }
+        }
+     }
+  }
+}
