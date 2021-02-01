@@ -1,7 +1,7 @@
 TAG = "schema-validator"
 
-INPUT_PATH = "data/sample-2.json"
-SCHEMA_PATH = "data/schema-test-1.json"
+INPUT_PATH = "data/sample.json"
+SCHEMA_PATH = "data/schema.json"
 
 
 build:

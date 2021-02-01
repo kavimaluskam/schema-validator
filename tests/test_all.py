@@ -1,7 +1,7 @@
 import json
 import pytest
 
-from SchemaValidator import generate_schema
+from SchemaValidator import generate_schema_by_records
 from SchemaValidator import validate_records
 from SchemaValidator import generate_summary_report
 
@@ -15,7 +15,7 @@ def test_generate_schema_correct_case():
     with open(schema_path) as json_file:
         schema = json.load(json_file)
 
-    assert schema == generate_schema(input_path)
+    assert schema == generate_schema_by_records(input_path)
 
 
 def test_generate_schema_incorrect_case():
@@ -23,7 +23,7 @@ def test_generate_schema_incorrect_case():
     input_path = "tests/data/sample-2.json"
 
     with pytest.raises(Exception):
-        generate_schema(input_path)
+        generate_schema_by_records(input_path)
 
 
 def test_validate_correct_case():
