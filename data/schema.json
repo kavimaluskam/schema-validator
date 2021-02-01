@@ -1,0 +1,94 @@
+{
+    "id": {
+        "type": "string",
+        "required": true
+    },
+    "received_at": {
+        "type": "string",
+        "required": true
+    },
+    "anonymous_id": {
+        "type": "string",
+        "required": true
+    },
+    "context_app_version": {
+        "type": "string",
+        "required": false
+    },
+    "context_device_ad_tracking_enabled": {
+        "type": "boolean",
+        "required": false
+    },
+    "context_device_manufacturer": {
+        "type": "string",
+        "required": true
+    },
+    "context_device_model": {
+        "type": "string",
+        "required": true
+    },
+    "context_device_type": {
+        "type": "string",
+        "required": true
+    },
+    "context_locale": {
+        "type": "string",
+        "required": true
+    },
+    "context_network_wifi": {
+        "type": "boolean",
+        "required": true
+    },
+    "context_os_name": {
+        "type": "string",
+        "required": true
+    },
+    "context_timezone": {
+        "type": "string",
+        "required": false
+    },
+    "event": {
+        "type": "string",
+        "required": true
+    },
+    "event_text": {
+        "type": "string",
+        "required": true
+    },
+    "original_timestamp": {
+        "type": "string",
+        "required": true
+    },
+    "sent_at": {
+        "type": "string",
+        "required": true
+    },
+    "timestamp": {
+        "type": "string",
+        "required": true
+    },
+    "user_id": {
+        "type": "string",
+        "required": false
+    },
+    "context_network_carrier": {
+        "type": "string",
+        "required": true
+    },
+    "context_device_token": {
+        "type": "None",
+        "required": false
+    },
+    "context_traits_taxfix_language": {
+        "type": "string",
+        "required": true
+    },
+    "context_library_name": {
+        "type": "string",
+        "required": false
+    },
+    "context_library_version": {
+        "type": "string",
+        "required": false
+    }
+}
